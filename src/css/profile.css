@@ -1,0 +1,165 @@
+.PerfilComponent{
+  display: flex;
+}
+
+
+.InfoPerfilBox{
+  background-color: rgb(240, 238, 238);
+    width: 30%;
+    margin: 5em auto;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 2em;
+    padding-bottom: 2em;;
+}
+.imgPerfil{
+    width: 150px;
+    height: 150px;
+    border: solid 3px;
+    border-radius: 100%;
+}
+.InfoBox .ImgCV{
+
+    width: 60px;
+}
+.postulacionesBox{
+    background-color: rgb(240, 238, 238);
+    width: 30%;
+    height: 50%;
+    margin: 5em auto;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.settingsbox{
+    background-color: rgb(247, 247, 247);
+    width: 40%;
+    margin: 5em auto;
+    height: 40em;
+    border-radius: 7px;
+    padding: 2em 2em;
+}
+.containerCV{
+    background-color: rgb(247, 247, 247);
+    width: 90%;
+    margin: 5em auto;
+    height: 40em;
+    border-radius: 7px;
+    padding: 2em 2em;
+}
+.general_container{
+  background-color: rgb(236, 236, 236);
+  display: grid;
+  grid-template-columns: 30% 70% ;
+  width: 40%;
+}
+.general_container .navUsuario{
+  background-color: rgb(48, 48, 48);
+   width: 100%;
+   height: 21cm;
+  
+   float: left;
+}
+.navUsuario ul{
+  width: 70%;
+  margin: auto;
+}
+
+.navUsuario ul li{
+  width: 90%;
+  list-style: none;
+  margin: 2em auto;
+  
+  color: rgb(116, 116, 116);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.navUsuario ul li a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.general_container .perfil{
+  background-color: rgb(247, 247, 247);
+  height: 30em;
+  margin: auto;
+  padding: 2em 2em;
+  text-align: center;
+}
+.imgPerfil2{
+  border: solid 7px;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+}
+.containerpostulacion{
+  background-color: rgb(219, 218, 218);
+  overflow: auto;
+  width: 95%;
+  height: 40em;
+  margin: 3em auto;
+}
+.formEditDates{
+  background-color: blue;
+  width: 50%;
+  
+  margin: 1em auto;
+  height: 40em;
+  border-radius: 7px;
+  padding: 2em 2em;
+  
+}
+.formEditDates form{
+  width: 40%;
+  margin: auto;
+}
+
+.formEditDates form input{
+  margin: 1em auto;
+}
+.minicontainerCV {
+  /*background-color: blue;*/
+  width: 80%;
+  height: 50em;
+  margin: auto;
+  text-align: center;
+}
+.minicontainerUpCV{
+  /*background-color: brown;*/
+  text-align: center;
+  width: 50%;
+  margin: 2em auto;
+}
+.ListApplysContainers{
+  display: flex;
+  /* background-color: brown; */
+  margin: 1em auto;
+}
+.ApplysContainers{
+  
+ 
+  width: 80%;
+  display: flex;
+  border: solid 1px black;
+  border-radius: 7px;
+}
+.MainContainerApplys{
+  background-color: white;
+  width: 40%;
+  margin: 5em auto;
+  border-radius: 7px;
+  height: 30em;
+  padding: 1em 1em;
+  border: solid 1px;
+  border-color: lightgray;
+  right: 13em;
+  
+  
+}
+
+.containerElements{
+  width: 50%;
+  
+  margin: auto;
+}

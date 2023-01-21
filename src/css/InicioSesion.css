@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.containerlogo{
+    height: 90em;
+    background-color: bisque;
+
+}
+
+.logoscroll{
+    background-color: blue;
+    width: 90%;
+    margin: auto;
+    
+    position: sticky;
+    top: 40%;
+    
+}
+
+.container2{
+    padding-top: 20em;
+    background-color: cadetblue;
+    height: 80em;
+}
+
+.formulario1{
+    background-color: cornflowerblue;
+    width: 90%;
+    height: 20em;
+    margin: auto;
+    border: solid 1px;
+    border-radius: 7px;
+    
+}
+.formulario_Sesion{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5em auto;
+   
+    
+
+}
+
+.formulario2{
+    background-color: chartreuse;
+    height: 20em;
+    width: 90%;
+    margin: 30em auto;
+}
+
+.logo{
+    width: 400px;
+} 
+.container1y2{
+    
+    width: 90%;
+    margin: auto;
+    background-color: coral;
+    height: 90em;
+}
+.containerrojo{
+    
+    padding: 0;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    background-color: brown;
+}
+
+
+
+/* 
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background-color: rgb(206, 66, 66);
+    display: flex;
+    margin:  auto;
+    margin-top: 10em;
+    margin-bottom: 5em;;
+    
+    
+}
+.container2{
+    background-color: rgb(116, 106, 106);
+    margin: 5em auto;
+    width: 100%;
+    
+}
+
+
+.formulario{
+    background-color: rgb(51, 255, 0);
+    width: 60%;
+    margin: auto;
+    margin-top: 25em;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 7px;
+    padding: 1em 1em;
+}
+.formulario_Sesion{
+    background-color: blue;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 7px;
+    padding: 1em 1em;
+}
+.formulario input{
+    text-align: center;
+}
+.formulario_Sesion input{
+    text-align: center;
+}
+.containerlogo{
+   
+    padding: 0px;
+   background-color: coral;
+    width: 100%;
+    text-align: center;
+   
+    
+}
+.containerlogo img{
+    width: 400px;
+   
+}
+.logoscroll{
+    background-color: aquamarine;
+    width: 70%;
+    margin: auto;
+    position: sticky;
+    top: 30%;
+}
+footer{
+    background-color: black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    
+}
+.credits{
+   background-color:black;
+    margin: auto;
+    width: 50%;
+    color: white;
+}
+.credits ul {
+  background-color: gray;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+   
+   
+}
+.credits ul li{
+    margin: auto;
+    list-style: none;
+    width: 20%;
+    display: flex;
+}
+ */
