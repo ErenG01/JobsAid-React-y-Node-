@@ -24,7 +24,7 @@ function RegistroSesion() {
 
         <div>
             <div className='formulario2'>
-                            <form onSubmit={handleSubmit(formSubmit)} method="POST" className="formulario" id="FormularioRegistro">
+                            <form onSubmit={handleSubmit(formSubmit)} method="POST" className="formulario_registro" id="FormularioRegistro">
                                 <h1 className="H1Bienvenido" id="h1bienvenido">Bienvenido</h1>
                                 <input
                                     className="form-control mb-2"

@@ -9,22 +9,24 @@ body{
     margin: auto;
     text-align: center;
     width: 600px;
-    height: 100px;
+    height: 150px;
     padding-top: 1em;
 }
 .header_img{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    /* background-color: blue; */
 }
 .header_img .h4{
     text-align: center;
 }
 .HeaderAndForm{
     z-index: 1;
-    background-image: url("");
-    background-repeat: no-repeat;
-
-    margin: auto;
+    background-image: url("../../public/imagenes/fondo1.png");
+    /* background-color: rgba(131, 13, 241, 0.664); */
+    background-repeat:inherit;
+    height: 25em;
+    
     padding-bottom: 1em;
     position: relative;
     width: 100%;
@@ -76,13 +78,13 @@ button.btn.btn-primary{
     width: 50%;
     display: flex;
     margin: 3em auto;
-    background-color: blue;
+    /* background-color: blue; */
     border-spacing: 3em;
 }
 
 .MainContainerJob1{
 
-    background-color: brown;
+    /* background-color: brown; */
     width: 50%;
     
    
@@ -130,9 +132,27 @@ button.btn.btn-primary{
     background-color: cadetblue;
 } */
 .filtro{
-    background-color: blue;
+    
     width: 70%;
     margin: auto;
+}
+
+.SectionArticles{
+    /* background-color: gray; */
+    display: flex;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.SectionArticles div{
+    margin: auto;
+    border: solid 2px ;
+    border-radius: 7px;
+    width: 30%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
 }
 
 

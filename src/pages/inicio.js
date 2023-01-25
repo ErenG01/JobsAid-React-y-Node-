@@ -1,6 +1,11 @@
 import React, { Component, Fragment, useState, useEffect } from "react";
 import { useForm } from 'react-hook-form';
 import '../css/inicio.css';
+import Filtro from "./componentes/Filtro";
+import bonbillaIMG from '../img/inicio/bombilla.png';
+import EstadisticasImg from '../img/inicio/estadistica.png'
+import trabajadoresIMG from '../img/inicio/icono_trabajadores.png'
+
 
 
 function Inicio() {
@@ -14,6 +19,8 @@ function Inicio() {
 
     const [showFilter, setShowFilter] = useState(false)
 
+    const [showContent, setContent] = useState(false)
+
     const customSubmit= (data) =>{
         if (data != '') {
             const infofilter = data;
@@ -23,10 +30,11 @@ function Inicio() {
             body: JSON.stringify(data)
         }
         console.log(data)
-        fetch(`http://localhost:9000/api/filter`, requestInit)
+        fetch(`http://localhost:9000/api/browser`, requestInit)
             .then(res => res.json())
             .then(res => setList(res))
-          
+            setShowFilter(true)
+            setContent(true)
 
         }else{
 
@@ -61,13 +69,7 @@ function Inicio() {
 
     }
 
-    const filtro = (city, minsalary, maxsalary, typejob, modality) =>{
-        const ruta = 'http://localhost:9000/api/'
-
-        // if (city != '' ){
-        //     ruta += " and LugarEmpleo = '".$_POST['city']+"' ";
-        //   }
-    }
+    
 
     const actionApply = () =>{
 
@@ -103,17 +105,75 @@ function Inicio() {
         
     }
 
+    const hijoAPadre= (daticos) =>{
+        // console.log(daticos)
+
+        if (daticos != '') {
+            
+            const requestInit = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(daticos)
+        }
+        console.log(daticos)
+        fetch(`http://localhost:9000/api/filter`, requestInit)
+            .then(res => res.json())
+            .then(res => setList(res))
+          
+
+        }else{
+
+            const getList = () =>{
+                fetch('http://localhost:9000/api')
+                .then(res => res.json())
+                .then(res => setList(res))
+            }
+        }
+    }
+
     return (
         
         <div>
-            
-            
+            <div className="HeaderAndForm">
+                <div className="header_img">
+
+
+                    <form onSubmit={handleSubmit(customSubmit)} className="formulario" data-form>
+                    <h4 className="h4">Buscar oferta de Empleo </h4>
+
+                        <label className="imput" >Cargo o titulo</label>
+                        <input
+                            {...register('charge')}
+
+                            type="text"
+                            placeholder=""
+                            resuired
+                            data-nombre
+                            width="12px"
+                            height="12px"
+                        />
+                        <label className="imput" >Ciudad</label>
+                        <input
+                            {...register('formcity')}
+
+                            type="text"
+                            placeholder=""
+
+
+                        />
+
+                        <button type="submit" className="btn btn-primary">Buscar oferta</button>
+
+
+                    </form>
+                </div>
+            </div>       
            
 
             <div className="filtro" id="filtro"> 
-                {/* {showFilter ?  */}
-                
-                {/* : ''}   */}
+                {showFilter ? 
+                <Filtro hijoAPadre={hijoAPadre} ></Filtro>
+                 : ''} 
                       
             </div>
 
@@ -213,7 +273,34 @@ function Inicio() {
                 </aside>
                 )} 
             </div>
-            
+
+            {showContent ? 
+                
+                '' :  
+            <div className="SectionArticles">
+                
+                    
+
+                    <div className="Article1">
+                       
+                        <img src={bonbillaIMG}></img>
+                        <p>La rapidez es otra de las características cuando buscamos trabajo por internet. </p>
+                    </div>
+
+                    <div className="Article2">
+                        
+                        <img src={trabajadoresIMG}></img>
+                        <p>la facilidad para encontrar trabajo. Es lógico; a cuantas más ofertas puedas aplicar</p>
+                    </div>
+
+                    <div className="Article3">
+                        
+                        <img src={EstadisticasImg}></img>
+                        <p>puedes ahorrarte ese posible inconveniente y buscar y aplicar a las ofertas desde tu propia casa.</p>
+                    </div>
+
+            </div>
+            } 
                     <footer className="" id="footers">
 
                         <script src="footer.js"> </script>
